@@ -1,0 +1,38 @@
+/*====== Style Sheet =======*/
+
+/*== Id Selector ===*/
+div {
+    width: 200px;
+    height: 90px;
+    float: left;
+    padding: 5px;
+    margin: 5px;
+    background-color:blue;
+  }
+ /*== Class Selector ===*/
+div, span {
+    width: 120px;
+    height: 40px;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+    background-color: #EEEEEE;
+  }
+ /*== Parent Child Selector ===*/
+ body {
+    font-size: 14px;
+  }
+ /*== Descendant Selector ===*/
+form {
+    border: 2px green solid;
+    padding: 2px;
+    margin: 0;
+    background: #efe;
+  }
+  div {
+    color: red;
+  }
+  fieldset {
+    margin: 1px;
+    padding: 3px;
+  }
