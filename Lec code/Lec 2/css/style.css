@@ -18,21 +18,21 @@ div, span {
     margin: 10px;
     background-color: #EEEEEE;
   }
- /*== Parent Child Selector ===*/
- body {
+/*== Parent Child Selector ===*/
+body {
     font-size: 14px;
   }
- /*== Descendant Selector ===*/
+/*== Descendant Selector ===*/
 form {
     border: 2px green solid;
     padding: 2px;
     margin: 0;
     background: #efe;
-  }
-  div {
+}
+div {
     color: red;
-  }
-  fieldset {
+}
+fieldset {
     margin: 1px;
     padding: 3px;
-  }
+}

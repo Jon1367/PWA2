@@ -1,0 +1,60 @@
+body{
+
+margin:0;
+padding:0;
+background-color:black;
+
+}
+#wrapper{
+
+	width:960px;
+	background-color:blue;
+	margin:0 auto;
+
+}
+header{
+
+	width:100%;
+	background-color:green;
+	overflow:hidden;
+}
+h1{
+	color:blue;
+	float:left;
+	margin-bottom:0;
+	margin-top: 15px;
+	overflow:hidden;
+}
+h2{
+
+	color:white;
+	margin-left:300px;
+}
+button{
+
+	margin-left:400px;
+	background-color:green;
+
+}
+#log li{
+
+	list-style:none;
+	margin-left:10px;
+	float:right;
+	overflow:hidden;
+
+}
+#topSection{
+
+	width:800px;
+}
+#intro{
+
+	width:500px;
+	margin:0 auto;
+	clear:both;
+}
+.user{
+
+	float:left;
+}
