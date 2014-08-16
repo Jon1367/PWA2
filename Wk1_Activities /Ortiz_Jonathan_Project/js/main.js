@@ -24,8 +24,9 @@ $('.masterTooltip').hover(function(){
 $('.masterTooltip').hover(function(){
 
 
-	$("#signinButton").active("background-color","red");
+	$("#signinButton").on ("click", function(){
+		("background-color","red");}
 
 
 
-})
+});
