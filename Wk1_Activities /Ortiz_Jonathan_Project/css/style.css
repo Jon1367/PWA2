@@ -40,14 +40,12 @@ h2{
 	overflow:hidden;
 
 }
-
 button{
 
 	margin-left:400px;
 	background-color:green;
 
 }
-
 /*=======  Cover Page ========*/
 #topSection{
 
@@ -75,7 +73,6 @@ button{
 	font-size:12px; 
 
 }
-
 /*=======  Admin Page ========*/
 
 #back{
@@ -141,19 +138,24 @@ button{
 	color:white;
 
 }
-/*=======  According Stack  Page ========*/
+.Mclick{
 
+	list-style:none;
+}
+.Mclick a{
+
+	color:white;
+}
+/*=======  According Stack  Page ========*/
 #one{
 
 	clear:both;
 }
 #two{
 
-
 	clear:both;
 
 }
-
 #three{
 
 	clear:both;
@@ -165,7 +167,13 @@ button{
 	background-color:rgba(0,0,0,0.5);
 	margin-left:260px;
 }
+.status li{
 
+	list-style:none;
+	float:left;
+	margin-left:10px;
+}
+#mood{
 
-
-
+	clear:both;
+}
