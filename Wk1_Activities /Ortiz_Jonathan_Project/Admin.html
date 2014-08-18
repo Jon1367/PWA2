@@ -23,17 +23,76 @@
 
 <h2>Welcome User</h2>
 
-<p>           <p>
+
+		<ul>
+			<li class="Mclick"><a href="#">Add Projects+</a></li>
+		</ul>
+
+		<div id="navSection">
+			<ul class="nav">
+				<li><a href="#one">Project</a></li>
+				<li><a href="#two">Task</a></li>
+				<li><a href="#three">User</a></li>
+			</ul>
+		</div>
+		<div id="one">
+			<p class="info"> Welcome to Projects tab one. Here on the projects tab you can orginaze your design. With this you can store any designed you created for Design-T</p><button> Button </button>
+		</div>
+
+		<div id="two">
+			<p class="info"> Welcome to tab two. In this tab we will go over the task. These task are for people to view what work you comptlte </p>
+			<button>Click</button>
+		</div>
+
+		<div id="three">
+			<p class="info">Welcome to tab 3</p>
+			<button>Click</button>
+		</div>
+
+<div id ="back">
+	
+
+	<div id="modal">
+
+		<span class="close" >X</span>
+		<h3 id="hModal"> Add Project </h3>
 
 
+		<form>
 
-	<ul>
-		<li>Projects</li>
-		<li>Current</li>
-		<li>Compelte</li>
-	</ul>
-</div>
-</body>
+			<label class="lModal">Project Name</label>
+				<input class="iModal" type="text" name="User"
+				maxlength="100"
+				required="required"
+				placeholder="Name"/>
+
+			<label class="lModal">Project Description</label>
+				<input class="iModal" 
+				 type="text" 
+				 name="Email"
+				 maxlength="100"
+				 required="required"
+				 placeholder="Email Adress"/>
+
+			<label class="lModal">Due Date</label>
+				<input class="iModal" 
+				type="text" 
+				name="password"
+				maxlength="100"
+				required="required"
+				placeholder="Password"/>
+		</form>
 
 
+	</div><!-- End of Modal -->	
+</div><!-- End of Background -->
+
+		</div><!-- End of Wrapper -->
+
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>		<!-- script -->
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="js/1.11.1/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+
+	</body>
 </html>
