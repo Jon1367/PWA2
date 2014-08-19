@@ -48,9 +48,13 @@
 			$on.addClass('active');
 			$content.show();
 
-			e.preventDefault();
-		});
-	});
+			e.preventDefault;
+
+		})
+
+
+
+	})
 
 
 })(jQuery);
