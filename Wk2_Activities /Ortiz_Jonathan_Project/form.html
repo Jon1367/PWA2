@@ -4,13 +4,11 @@
 <meta charset="utf-8"/>
 <title>Desgin-T Form</title>
 <link href="css/style.css" rel="stylesheet"/>
-
-
 <body>
 
 	<header>
 
-		<h1>Desgin-T</h1>
+		<h1><a href="cover.html">Desgin-T</a></h1>
 
 		<ul id="log">
 			<li><a href="Admin.html">Login</a></li>
@@ -21,48 +19,66 @@
 
 <div id="wrapper">
 
-<h2> Sig up </h2>
+<h2> Sign up </h2>
 
-<form>
+<form id="loginForm">
 
-	<label class="User">User Name</label>
-	<input class="User" ype="text" name="User"
-	maxlength="100"
-	required="required"
-	placeholder="Name"/>
+	<label>User Name</label>
+		<input type="text"
+			class="masterTooltip"
+			title="Enter a cool User Name"
+			name="signinButton"
+			maxlength="50"
+			required="required"
+			placeholder="User name"/>
 
 	<label>Email</label>
-	<input type="text" name="Email"
-	maxlength="100"
-	required="required"
-	placeholder="Email Adress"/>
-
+		<input type="text" 
+			class="masterTooltip"
+			title="Enter your Email"
+			name="signinButton"
+			maxlength="100"
+			required="required"
+			placeholder="Email Adress"/>
 	<label>Password</label>
-	<input type="text" name="password"
-	maxlength="100"
-	required="required"
-	placeholder="Password"/>
+		<input type="text"
+			class="masterTooltip"
+			title="create a unquie password"
+			name="signinButton"
+			maxlength="100"
+			required="required"
+			placeholder="Password"/>
 
 	<label>Confirm Password</label>
-	<input type="text" name="confirm password"
-	maxlength="100"
-	required="required"
-	placeholder="Password"/>
+		<input type="text" 
+			class="masterTooltip"
+			title="Re-enter passwork hope you didn't forget :) "
+			name="signinButton"
+			maxlength="100"
+			required="required"
+			placeholder="Password"/>
 
 	<label>Male</label>
-	<input type="radio" name="Male"
-	maxlength="100"
-	placeholder="Email Adress"/>
+		<input type="radio"
+			name="Male"
+			maxlength="100"
+			placeholder="Email Adress"/>
 
-<label>Female</label>
-<input type="radio" name="Female"
-maxlength="100"
-placeholder="Email Adress"/>
+	<label>Female</label>
+		<input type="radio" 
+			name="Female"
+			maxlength="100"
+			placeholder="Email Adress"/>
 
 <input type="submit" name="sign-up"/>
-
+==
 
 </form>
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>		<!-- script -->
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="js/1.11.1/jquery.min.js"></script>
+		<script src="js/main.js"></script>
 
 </div>
 </body>
