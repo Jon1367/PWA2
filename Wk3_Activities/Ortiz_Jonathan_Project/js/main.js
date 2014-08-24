@@ -5,17 +5,17 @@
 
 	$('.Mclick').click(function(event){
 		event.preventDefault();
-		$('#back')
+		$('.back')
 			.fadeIn()
-			.find('#modal')
+			.find('.modal')
 			.fadeIn();
 	})
 
 	$(".close").click(function(event){
 		event.preventDefault();
-		$('#back')
+		$('.back')
 			.fadeOut()
-			.find('#modal')
+			.find('.modal')
 			.fadeOut();
 
 	})
@@ -81,6 +81,15 @@
 		});
 	});
 
+	$.getJSON("xhr/check_login.php",function(data){
+
+		console.log(data);
+
+		$.each(data,function key, val){
+
+			console.log(val.first_name);
+		}
+	})
 
 })(jQuery);
 
