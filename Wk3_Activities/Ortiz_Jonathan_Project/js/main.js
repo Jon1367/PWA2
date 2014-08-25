@@ -5,17 +5,17 @@
 
 	$('.Mclick').click(function(event){
 		event.preventDefault();
-		$('.back')
+		$('#back')
 			.fadeIn()
-			.find('.modal')
+			.find('#modal')
 			.fadeIn();
 	})
 
 	$(".close").click(function(event){
 		event.preventDefault();
-		$('.back')
+		$('#back')
 			.fadeOut()
-			.find('.modal')
+			.find('#modal')
 			.fadeOut();
 
 	})
@@ -54,43 +54,7 @@
 
 	})
 
-	$('#signinButton').click(function(){
-
-		var user = $('#user').val();
-		var pass = $('#pass').val();
-
-		console.og("This notifies you if the passwrod is working");
-		$.ajax({
-
-			url:"xhr/login.php",
-			type:"post",
-			dataType:"json",
-			data:{
-
-				username: user,
-				password: pass
-			},
-			success:function(response){
-				console.log("test User");
-				if(response.error){
-					alert(response.error);
-				}else{
-					window.location.assign("Admin.html")
-				};
-			}
-		});
-	});
-
-	$.getJSON("xhr/check_login.php",function(data){
-
-		console.log(data);
-
-		$.each(data,function key, val){
-
-			console.log(val.first_name);
-		}
-	})
-
+	
 })(jQuery);
 
 $('.masterTooltip').hover(function(){
@@ -121,4 +85,42 @@ $('.masterTooltip').hover(function(){
 
 
 }) 
+
+// $('#signinButton').click(function(){
+
+// 		var user = $('#user').val();
+// 		var pass = $('#pass').val();
+
+// 		console.og("This notifies you if the passwrod is working");
+// 		$.ajax({
+
+// 			url:"xhr/login.php",
+// 			type:"post",
+// 			dataType:"json",
+// 			data:{
+
+// 				username: user,
+// 				password: pass
+// 			},
+// 			success:function(response){
+// 				console.log("test User");
+// 				if(response.error){
+// 					alert(response.error);
+// 				}else{
+// 					window.location.assign("Admin.html")
+// 				};
+// 			}
+// 		});
+// 	});
+
+// 	$.getJSON("xhr/check_login.php",function(data){
+
+// 		console.log(data);
+
+// 		$.each(data,function key, val){
+
+// 			console.log(val.first_name)
+// 		}
+// 	})
+
 

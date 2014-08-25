@@ -87,7 +87,7 @@ button{
 	background-color:#D66131;
 	margin-left:600px;
 	padding-bottom:20px;
-	border: 1px 1px 1px 1px solid green;
+	border: 1px solid green;
 	border-radius:20px;
 	padding:5px;
 	width:50px;
@@ -96,14 +96,14 @@ button{
 }
 #middleSection{
 
-
-	margin-left:0 auto;
+	margin:0 auto;
+	width:800px;
 }
 /*=======  Gallery ========*/
 
 h3{
 
-	margin-left:400px;
+	margin-left:300px;
 	font-size:30px;
 }
 img{
@@ -194,8 +194,8 @@ img:hover{
 
 	color:#FFB70C;
 	margin-left:200px;
-	font-family:"";
-}	font-style:italic;
+	font-style:italic;
+}
 .lModal{
 
 	float:left;
