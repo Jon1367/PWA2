@@ -54,6 +54,36 @@
 
 	})
 
+
+$('#signinButton').click(function(){
+
+		var user = $('#user').val();
+		var pass = $('#pass').val();
+
+		console.log("Testing");
+		$.ajax({
+
+			url:"xhr/login.php",
+			type:"post",
+			dataType:"json",
+			data:{
+
+				username: user,
+				password: pass
+			},
+			success:function(response){
+				console.log("test User");
+				if(response.error){
+					alert(response.error);
+				}else{
+					window.location.assign("Admin.html");
+				}
+			}
+		});
+	});
+
+
+
 	
 })(jQuery);
 
@@ -86,32 +116,7 @@ $('.masterTooltip').hover(function(){
 
 }) 
 
-// $('#signinButton').click(function(){
 
-// 		var user = $('#user').val();
-// 		var pass = $('#pass').val();
-
-// 		console.og("This notifies you if the passwrod is working");
-// 		$.ajax({
-
-// 			url:"xhr/login.php",
-// 			type:"post",
-// 			dataType:"json",
-// 			data:{
-
-// 				username: user,
-// 				password: pass
-// 			},
-// 			success:function(response){
-// 				console.log("test User");
-// 				if(response.error){
-// 					alert(response.error);
-// 				}else{
-// 					window.location.assign("Admin.html")
-// 				};
-// 			}
-// 		});
-// 	});
 
 // 	$.getJSON("xhr/check_login.php",function(data){
 
