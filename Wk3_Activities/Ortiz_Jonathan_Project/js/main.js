@@ -22,6 +22,7 @@
 
 	})
     /* ======================== Admin page ====================== */
+
 	$('ul.nav').each(function(){
 
 
@@ -80,7 +81,7 @@ $('#signinButton').click(function(e){
 			}
 		});
 	});
-    /* ======================== Sign Out ====================== */
+ /* ======================== Sign Out ====================== */
 
 $("#signout").click(function(e){
 
@@ -89,7 +90,15 @@ $("#signout").click(function(e){
 		window.location.assign("cover.html");
 	});
 });
-	
+/* ======================== Display Name ====================== */
+
+ $.getJSON("xhr/check_login.php", function(data){
+        console.log(data);
+        $.each(data,function(key, val){
+            console.log(val.first_name);
+            $(".userid").html("Welcome User: " + val.first_name);
+        })
+    });
 	
 })(jQuery);
 
@@ -149,7 +158,7 @@ $('.masterTooltip').hover(function(){
                 if(response.error) {
                     alert(response.error);
                 }else {
-                    window.location.assign("cover.html");
+                    window.location.assign("Admin.html");
                 }
             }
         });
