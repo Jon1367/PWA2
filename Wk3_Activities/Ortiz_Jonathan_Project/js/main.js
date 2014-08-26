@@ -50,24 +50,19 @@
 
 			e.preventDefault;
 
-		})
+		});
+	});
 
-	})
 
-
-$('#signinButton').click(function(){
-
+$('#signinButton').click(function(e){
+		e.preventDefault;
 		var user = $('#user').val();
 		var pass = $('#pass').val();
-
-		console.log("Testing");
 		$.ajax({
-
 			url:"xhr/login.php",
 			type:"post",
 			dataType:"json",
 			data:{
-
 				username: user,
 				password: pass
 			},
