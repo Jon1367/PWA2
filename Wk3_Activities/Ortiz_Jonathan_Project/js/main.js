@@ -1,4 +1,4 @@
-/*======== tooltip =========*/
+/*======== Qjuery =========*/
 
 (function($){
 
@@ -56,7 +56,7 @@
 	});
 
     /* ======================== Cover page ====================== */
-    
+
 $('#signinButton').click(function(e){
 
 		e.preventDefault;
@@ -80,7 +80,7 @@ $('#signinButton').click(function(e){
 			}
 		});
 	});
-
+    /* ======================== Sign Out ====================== */
 
 $("#signout").click(function(e){
 
@@ -93,6 +93,7 @@ $("#signout").click(function(e){
 	
 })(jQuery);
 
+   /* ======================== Tool tip ====================== */
 $('.masterTooltip').hover(function(){
 
 	var title = $(this).attr('title');
@@ -123,15 +124,35 @@ $('.masterTooltip').hover(function(){
 }) 
 
 
+  /* ==================== New Projects ======================== */
 
-// 	$.getJSON("xhr/check_login.php",function(data){
+      $('#add').on('click', function(e) {
+        e.preventDefault();
+        var projName = $('#projectName').val(),
+            projDesc = $('#projectDescription').val(),
+            projDue = $('#projectDueDate').val(),
+            status = $('input[name="status"]:checked').prop("id");
 
-// 		console.log(data);
+        $.ajax({
+            url: "xhr/new_project.php",
+            type: "post",
+            dataType: "json",
+            data: {
+                projectName: projName,
+                projectDescription: projDesc,
+                dueDate: projDue,
+                status: status
+            },
+            success: function(response){
+                console.log('Testing for success');
 
-// 		$.each(data,function key, val){
-
-// 			console.log(val.first_name)
-// 		}
-// 	})
+                if(response.error) {
+                    alert(response.error);
+                }else {
+                    window.location.assign("cover.html");
+                }
+            }
+        });
+    });
 
 
