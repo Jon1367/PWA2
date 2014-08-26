@@ -3,6 +3,8 @@
 (function($){
 
 
+	/* ======================== Mclick ====================== */
+
 	$('.Mclick').click(function(event){
 		event.preventDefault();
 		$('#back')
@@ -19,7 +21,7 @@
 			.fadeOut();
 
 	})
-
+    /* ======================== Admin page ====================== */
 	$('ul.nav').each(function(){
 
 
@@ -53,8 +55,10 @@
 		});
 	});
 
-
+    /* ======================== Cover page ====================== */
+    
 $('#signinButton').click(function(e){
+
 		e.preventDefault;
 		var user = $('#user').val();
 		var pass = $('#pass').val();
@@ -78,7 +82,14 @@ $('#signinButton').click(function(e){
 	});
 
 
+$("#signout").click(function(e){
 
+	e.preventDefault;
+	$.get("xhr/logOut.php", function(){
+		window.location.assign("cover.html");
+	});
+});
+	
 	
 })(jQuery);
 
