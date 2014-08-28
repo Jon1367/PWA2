@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset="utf-8"/>
+<title>Desgin-T DashBoard</title>
+<link href="css/style.css" rel="stylesheet"/>
+
+<body>
+
+<header>
+
+		<h1><a href="cover.html">Desgin-T</a></h1>
+
+		<ul id="log">
+			<li><a href="">Login</a></li>
+			<input name="logOut" type="button" id="signout" value="Log Out"/>
+		</ul>
+	</header>
+
+<div id="wrapper">
+
+
+
+<div class="userid">Welcome User</div>
+
+
+
+		<ul>
+			<li class="Mclick"><a href="#">Add Projects+</a></li>
+		</ul>
+
+		<div id="navSection">
+			<ul class="nav">
+				<li><a href="#one">Project</a></li>
+				<li><a href="#two">Task</a></li>
+				<li><a href="#three">User</a></li>
+			</ul>
+		</div>
+		<div id="one">
+			<p class="info"> Welcome to Projects tab one. Here on the projects tab you can orginaze your design. With this you can store any designed you created for Design-T</p><button> Button </button>
+		</div>
+
+		<div id="two">
+			<p class="info"> Welcome to tab two. In this tab we will go over the task. These task are for people to view what work you comptlte </p>
+			<button>Click</button>
+		</div>
+
+		<div id="three">
+			<p class="info">Welcome to tab 3</p>
+			<button>Click</button>
+		</div>
+
+<div id="back">
+	
+
+	<div id="modal">
+
+		<span class="close" >X</span>
+		<h3 id="hModal"> Add Project </h3>
+
+
+		<form>
+
+			<label class="lModal">Project Name</label>
+				<input class="iModal"
+				id="projectName"
+				type="text" 
+				name="project"
+				maxlength="100"
+				required="required"
+				placeholder="Name"/>
+
+			<label class="lModal">Project Description</label>
+				<input class="iModal" 
+				 id="projectDescription"
+				 type="text" 
+				 name="project"
+				 maxlength="100"
+				 required="required"
+				 placeholder="Email Adress"/>
+
+			<label class="lModal">Due Date</label>
+				<input class="iModal" 
+				id="projectDueDate"
+				type="text" 
+				name="project"
+				maxlength="100"
+				required="required"
+				placeholder="Password"/>
+		</form>
+
+		<div id="mood">
+		<label>
+
+			<input class="mystatus"
+			type="radio"
+			name="status"
+			id="urgent"
+			/>
+			<img src="images/urgent.png" width="69" alt="urgent"/> 
+			
+			<input class="mystatus"
+			type="radio"
+			name="status"
+			id="normal"
+			/>
+			<img src="images/normal.png" width="69" alt="normal"/> 
+
+			<input class="mystatus"
+			type="radio"
+			name="status"
+			id="delay"
+			/>
+			<img src="images/Delay.png"  width="69" alt="delay"/> 
+
+			<input class="mystatus"
+			type="radio"
+			name="status"
+			id="complete"
+			/>
+			<img src="images/complete.png" width="69" alt="complete"/> 
+		</label>
+		</div>
+
+		<button id="add">Add</button>
+
+	</div><!-- End of Modal -->	
+</div><!-- End of Background -->
+
+		</div><!-- End of Wrapper -->
+
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>		<!-- script -->
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="js/jquery-1.11.1.js"></script>
+		<script src="js/main.js"></script>
+
+	</body>
+</html>
