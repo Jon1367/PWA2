@@ -15,6 +15,18 @@ background-image:url('../images/back.jpg');
 	margin-top:20px;
 
 }
+.right{
+
+	float:right;
+}
+.left{
+
+	float:left;
+}
+.clear{
+
+	clear:both;
+}
 /*=======  Header ========*/
 header{
 
@@ -153,6 +165,12 @@ img:hover{
 }
 /*=======  Admin Page ========*/
 
+#signout{
+
+	float:right;
+	margin-right: 20px;
+
+}
 #navSection{
 
 	width:100%;
@@ -252,7 +270,15 @@ img:hover{
 	float:left;
 	margin-left:10px;
 }
-#mood{
+#mood{c
 
 	clear:both;
+}
+/*=======  According Stack  Page ========*/
+#loginForm{
+
+	width:380px;
+	margin-left: 20px;
+	padding:10px;
+
 }
