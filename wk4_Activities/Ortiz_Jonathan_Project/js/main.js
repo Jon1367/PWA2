@@ -221,6 +221,8 @@ $('.masterTooltip').hover(function(){
       /* ====================== Sortable ======================== */
     $( "#sortable" ).sortable();
     $( "#sortable" ).disableSelection();
+        /* ====================== Date picker ======================== */
+    $('.datepicker').datepicker();
 
 })(jQuery);
   
