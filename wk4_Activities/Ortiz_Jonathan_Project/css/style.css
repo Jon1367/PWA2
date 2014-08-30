@@ -99,10 +99,10 @@ button{
 	display:none;
 	position:absolute;
 	border: 1px solid #333;
-	background-color:#000000;
+	background-color:blue;
 	border-radius:5px;
 	padding:7px;
-	color:#fff;
+	color:white;
 	font-size:12px; 
 }
 #cta{

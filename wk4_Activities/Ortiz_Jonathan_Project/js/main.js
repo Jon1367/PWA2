@@ -189,8 +189,7 @@ $('.masterTooltip').hover(function(){
                                 + '</div> </div> <br>'
                         );
 			          }
-
-			              /* ==================== Delete Button ======================== */
+ /* ==================== Delete Button ======================== */
                     $('.deletebtn').on('click', function(e){
                         var pid = $(this).parent().find(".projectid").val();
                         console.log('test delete');
@@ -210,10 +209,10 @@ $('.masterTooltip').hover(function(){
                                     console.log(result.id);
                                     window.location.assign("Admin.html");
                                 }
-                            }
-                        });
-                    }); //End Delete
-			        }
+                              }
+                        	});
+                    	}); //End Delete
+			         }
 			       }
 			    });
 			  };
