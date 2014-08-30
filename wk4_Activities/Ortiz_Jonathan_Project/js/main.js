@@ -218,5 +218,9 @@ $('.masterTooltip').hover(function(){
 			  };
     projects();
 
+      /* ====================== Sortable ======================== */
+    $( "#sortable" ).sortable();
+    $( "#sortable" ).disableSelection();
+
 })(jQuery);
   
