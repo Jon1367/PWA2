@@ -7,22 +7,21 @@
 
 <body>
 
-<header>
+	<header>
 
-		<h1>Desgin-T</a></h1>
+		<h1>Desgin-T</a></h1>			<!-- Header & LogOut -->
 
 		<ul id="log">
-		
 			<input name="logOut" type="button" id="signout" value="Log Out"/>
 		</ul>
+
 	</header>
 
 <div id="wrapper">
 
 
 
-<div class="userid">Welcome User</div>
-
+	<div class="userid">Welcome User</div>     <!-- Navagation -->
 
 
 		<ul>
@@ -50,16 +49,17 @@
 			<button>Click</button>
 		</div>
 
-<div id="back">
+<div id="back">				<!-- Modal Section -->
 	
 
-	<div id="modal">
+	<div id="modal">		
 
-		<span class="close" >X</span>
-		<h3 id="hModal"> Add Project </h3>
+			<div id="Mheader">
+				<h3 id="hModal"> Add Project </h3>
+				<span class="close" >X</span>
+			</div>
 
-
-		<form>
+		<form id="projects">
 
 			<label class="lModal">Project Name</label>
 				<input class="iModal"
@@ -89,51 +89,61 @@
 				placeholder="Password"/>
 		</form>
 
-		<div id="mood">
-		<label>
+		<div id="mood">					<!-- status Section -->
+			<label>
+				<input class="mystatus"
+				type="radio"
+				style="visibility:hidden" 
+				name="status"
+				id="urgent"
+				value="urgent" 
+				/>
+				<img src="images/urgent.png" width="69" alt="urgent"/> 
 
-			<input class="mystatus"
-			type="radio"
-			name="status"
-			id="urgent"
-			value="urgent" 
-			/>
-			<img src="images/urgent.png" width="69" alt="urgent"/> 
-			
-			<input class="mystatus"
-			type="radio"
-			name="status"
-			id="normal"
-			value="normal" 
-			/>
-			<img src="images/normal.png" width="69" alt="normal"/> 
+			</label>
+			<label>
+				<input class="mystatus"
+				type="radio"
+				name="status"
+				style="visibility:hidden" 
+				id="normal"
+				value="normal" 
+				/>
+				<img src="images/normal.png" width="69" alt="normal"/> 
 
-			<input class="mystatus"
-			type="radio"
-			name="status"
-			id="delay"
-			value="delay" 
-			/>
-			<img src="images/Delay.png"  width="69" alt="delay"/> 
+			</label>
+			<label>
+				<input class="mystatus"
+				type="radio"
+				style="visibility:hidden" 
+				name="status"
+				id="delay"
+				value="delay" 
+				/>
+				<img src="images/Delay.png"  width="69" alt="delay"/> 
 
-			<input class="mystatus"
-			type="radio"
-			name="status"
-			id="complete"
-			value="complete" 
-			/>
-			<img src="images/complete.png" width="69" alt="complete"/> 
-		</label>
+			</label>
+			<label>
+				<input class="mystatus"
+				type="radio"
+				style="visibility:hidden" 
+				name="status"
+				id="complete"
+				value="complete" 
+				/>
+				<img src="images/complete.png" width="69" alt="complete"/> 
+				
+			</label>
 		</div>
 
 		<button id="add">Add</button>
 
-	</div><!-- End of Modal -->	
-</div><!-- End of Background -->
+				</div>	<!-- End of Modal -->	
+			</div>	<!-- End of Background -->
+		</div>	<!-- End of Wrapper -->
 
-		</div><!-- End of Wrapper -->
-
-		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>		<!-- script -->
+		<!-- script -->
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>		
 		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		<script src="js/jquery-1.11.1.js"></script>
 		<script src="js/main.js"></script>

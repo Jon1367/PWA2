@@ -107,14 +107,19 @@ button{
 }
 #cta{
 
-	background-color:#D66131;
+	background-color:navy;
 	margin-left:600px;
 	padding-bottom:20px;
-	border: 1px solid green;
+	border: 2px solid #176913;
 	border-radius:20px;
 	padding:5px;
 	width:50px;
 	font-size:14px;
+
+}
+#cta a{
+
+	color:white;
 
 }
 #middleSection{
@@ -164,7 +169,13 @@ img:hover{
 	overflow:hidden;
 }
 /*=======  Admin Page ========*/
+.userid{
 
+	margin-left:330px;
+	font-size:36px;
+	color:white;
+	font-style:italic;
+}
 #signout{
 
 	float:right;
@@ -215,8 +226,8 @@ img:hover{
 }
 #modal{
 
-	width:600px;
-	height:500px;
+	width:500px;
+	height:300px;
 	overflow: hidden;
 	background-color:white;
 	position:relative;
@@ -225,23 +236,61 @@ img:hover{
 	left:50%;
 	margin-left:-300px;
 	z-index:1001;
+	border-radius:10px;
 }
 #hModal{
 
 	color:#FFB70C;
-	margin-left:200px;
+	margin-left:130px;
 	font-style:italic;
+	float:left;
+	margin-top:0;
+	margin-bottom:0;
+	letter-spacing:5px;
+
+}
+#Mheader{
+
+	background-color:black;
+	width:100%;
+	overflow:hidden;
+	box-shadow:2px 2px 2px blue;
 }
 .lModal{
 
 	float:left;
 	clear:both;
 	margin-right:20px;
+	margin-top: 10px;
 
 }
 .iModal{
 
 	float:left;
+	margin-right:5px;
+	margin-top:10px;
+}
+#mood{
+
+	width:600px;
+	margin-left:10px;
+	float:left;
+	clear:both;
+	
+}
+#projects{
+
+
+	margin-left:100px;
+}
+.close{
+
+	color:white;
+	overflow:hidden;
+	float:right;
+	margin-right:5px;
+	margin-top:5px;
+	background-color:blue;
 }
 /*=======  According Stack  Page ========*/
 #one{
@@ -270,15 +319,25 @@ img:hover{
 	float:left;
 	margin-left:10px;
 }
-#mood{c
+#mood{
 
 	clear:both;
 }
-/*=======  According Stack  Page ========*/
+/*=======  Form Page ========*/
 #loginForm{
 
 	width:380px;
 	margin-left: 20px;
 	padding:10px;
 
+}
+label{
+
+	font-style:italic;
+	font-family:"Hevetica";
+}
+#formHeader{
+
+	width:100%;
+	color:black;
 }

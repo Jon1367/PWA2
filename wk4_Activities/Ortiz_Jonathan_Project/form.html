@@ -4,91 +4,84 @@
 <meta charset="utf-8"/>
 <title>Desgin-T Form</title>
 <link href="css/style.css" rel="stylesheet"/>
+
 <body>
 
-	<header>
-
+	<header>						<!-- Header Section -->
+										
 		<h1>Desgin-T</h1>
 
-		<ul id="log">
-			<li class="Mclick"><a href="Admin.html">Login</a></li>
-			<li><a href="form.html">Sign-up</a></li>
-		</ul>
-
-	<div>
-
-		<div>
-
-
-			</div>
-		</div>
 	</header>
 
-<div id="wrapper">
+	<div id="wrapper">
 
-<h2> Sign up </h2>
+		<div id="formHeader">
+			<h2> Sign up </h2>
+		</div>
 
-<form id="loginForm">
+	<form id="loginForm">					<!-- Register Form -->
 
-	<label class="left">User Name</label>
-		<input type="text"
-			class="masterTooltip left"
-			title="Enter a cool User Name"
+		<label class="left clear">User Name</label>
+			<input type="text"
+				class="masterTooltip left clear"
+				title="Enter a cool User Name"
+				maxlength="50"
+				required="required"
+				/>
+
+		<label class=" left clear">Email</label>
+			<input type="text" 
+				class="masterTooltip left clear"
+				title="Enter your Email"
+				
+				maxlength="100"
+				required="required"
+				/>
 			
-			maxlength="50"
-			required="required"
-			/>
-	
-	<label class=" left ">Email
-		<input type="text" 
-			class="masterTooltip"
-			title="Enter your Email"
-			
-			maxlength="100"
-			required="required"
-			/>
-	</label>
-	<label class="left">Password</label>
-		<input type="text"
-			class="masterTooltip left"
-			title="create a unquie password"
-			
-			maxlength="100"
-			required="required"
-			/>
+		<label class="left clear">Password</label>
+			<input type="text"
+				class="masterTooltip left clear"
+				title="create a unquie password"
+				
+				maxlength="100"
+				required="required"
+				/>
 
-	<label class="left">Confirm Password
-		<input type="text" 
-			class="masterTooltip"
-			title="Re-enter passwork hope you didn't forget :) "
-			
-			maxlength="100"
-			required="required"
-			/>
-		</label>
-	<labe class="left clear">Male</label>
-		<input type="radio"
-			name="gender"
-			value="male" 
-			/>
+		<label class="left clear">Confirm Password</label>
+			<input type="text" 
+				class="masterTooltip left clear"
+				title="Re-enter passwork hope you didn't forget :) "
+				
+				maxlength="100"
+				required="required"
+				/>
+		
+		<label class="left clear">Male</label>
+			<input type="radio"
+				class="left"; 
+				name="gender"
+				value="male" 
+				/>
 
-	<label>Female</label>
-		<input type="radio" 
-			name="gender"
-			value="female" 
-			/>
+		<label class="left">Female</label>
+			<input type="radio"
+				class="left" 
+				name="gender"
+				value="female" 
+				/>
 
-<input type="submit" name="sign-up"/>
+		<input type="submit" 
+		class="left clear" 
+		name="sign-up"/>
+	</form>
 
-</form>
+	<!-- Java Script -->
 
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>		<!-- script -->
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>		
 		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		<script src="js/1.11.1/jquery.min.js"></script>
 		<script src="js/main.js"></script>
 
-</div>
-</body>
-
-
+		</div><!-- End of Wrapper-->
+	</body>
 </html>
